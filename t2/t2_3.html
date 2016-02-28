@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>DWEC2.3 - Números</title>
+</head>
+<body>
+	<h1><span style="font-size: smaller;">DWEC2.3 - Juan Antonio Forte García.</span></h1>
+	<script language="JavaScript">
+    var num1 = parseInt(prompt("Indroduzca el número 1:"));
+    var num2 = parseInt(prompt("Indroduzca el número 2:"));
+    var num3 = parseInt(prompt("Indroduzca el número 3:"));
+    //document.write("<br/>");
+    if (num1 >= num2 && num1 >= num3)
+    	document.write("El numero mayor es: "+ num1 +". <br/>");
+    else{
+		if (num2 >= num1 && num2 >= num3)    
+			document.write("El numero mayor es: "+ num2 +". <br/>");
+		else{
+			if (num3 >= num1 && num3 >= num2)    
+				document.write("El numero mayor es: "+ num3 +". <br/>");			
+		}
+				
+    }
+    
+    	
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+     <head>
+
+          <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+          <title>Ejercicio de Flotar y Posicionamiento</title>
+
+          <style type="text/css">
+
+               div#navegacion {
+
+                    border: 1px solid #CCC; padding: .5em; /* Borde y relleno */
+
+                    color: black; background-color: #33FF33; font-weight: bolder; }/* Texto y fondo */
+
+               .derecha { float: right; background-color: red;} /* Flotar a la derecha */
+
+               .izquierda { float: left; background-color: blue;} /* Flotar a la izquierda */
+
+               div.clear { clear: both; background-color: orange;} /* Se mueve el elemento de la clase clear hasta que no tenga ningún flotado a los lados */
+
+          </style>
+
+     </head>
+
+      <body>
+
+          <div id="navegacion"> <!-- Contenedor principal -->
+
+               <span class="izquierda">&laquo; Anterior</span> <!-- Contenedor en línea “izquierdo” -->
+
+               <span class="derecha">Siguiente &raquo;</span> <!-- Contenedor en línea “derecho” -->
+
+               <div class="clear"></div> <!-- Contenedor que hace que “navegacion” contenga los elementos flotados -->
+
+          </div>
+
+     </body>
+
+</html>
+

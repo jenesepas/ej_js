@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-es">
+  <title>LMSGI03 Tarea</title>
+  <id>http://www.cifpcarlos3.es</id>
+  <updated>2015-12-11T19:15:00Z</updated>        
+  <link rel="self" type="application/atom+xml" href="http://www.cifpcarlos3.es" />
+  <link rel="alternate" type="text/html" href="http://www.cifpcarlos3.es" />
+
+  <entry>
+      <title>Intranet SEF</title>
+      <id>http://www.cifpcarlos3.es/sef1314/</id>
+      <link rel="alternate" type="text/html" href="http://www.cifpcarlos3.es/sef1314/" />
+      <updated>2015-12-11T19:20:00Z</updated>        
+      <author>
+        <name>Juan</name>  
+      </author>
+      <summary>Intranet utilizada por los certificados de profesionalidad.</summary>
+  </entry>  
+
+  <entry>
+      <title>Intranet Calidad</title>
+      <id>http://cifpcarlos3.es/calidad1516/</id>
+      <link rel="alternate" type="text/html" href="http://cifpcarlos3.es/calidad1516/" />
+      <updated>2015-12-11T19:25:00Z</updated>        
+      <author>
+        <name>Antonio</name>  
+      </author>
+      <summary>Recursos relativos al plan de calidad del centro.</summary>
+  </entry>        
+
+  <entry>
+      <title>Intranet Educación a Distancia</title>
+      <id>https://ead.murciaeduca.es/login/index.php</id>
+      <link rel="alternate" type="text/html" href="https://ead.murciaeduca.es/login/index.php" />
+      <updated>2015-12-11T19:30:00Z</updated>        
+      <author>
+        <name>Juan Antonio</name>  
+      </author>
+      <summary>Intranet de los alumnos/as de los ciclos de Educación a Distancia.</summary>
+  </entry>        
+</feed>        

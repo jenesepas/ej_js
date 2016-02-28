@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>DWEC4.1</title>
+<script language="JavaScript">
+	function Alumno(p_nombre,p_apellido,p_ciclo)
+	{
+		this.nombre=p_nombre;
+		this.apellido=p_apellido;
+		this.ciclo=p_ciclo;
+		
+		this.cambiarCiclo = function(p_ciclo_new)
+		{
+			this.ciclo=p_ciclo_new;
+		}
+			
+	}
+	
+</script>
+</head>
+<body>
+	<h1><span style="font-size: smaller;">DWEC3.4 - Juan Antonio Forte García.</span></h1>
+	<script language="JavaScript">
+    
+	al1 = new Alumno("Maria","de la O","DAW");
+	al2 = new Alumno("Perico","de los Palotes","DAW");	
+	document.writeln("Alumno1 es " + al1.nombre +" "+al1.apellido+" y cursa:  " + al1.ciclo + ".<br/>");
+	document.writeln("Alumno2 es " + al2.nombre +" "+al2.apellido+" y cursa:  " + al2.ciclo + ".<br/>");
+	
+	al2.cambiarCiclo("DAM");
+	document.writeln("Alumno2 es " + al2.nombre +" "+al2.apellido+" y cursa ahora:  " + al2.ciclo + ".<br/>");
+    
+	</script>
+</body>
+</html>

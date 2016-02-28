@@ -1,0 +1,22 @@
+/*Archivo de ejemplo para utilizar las fuentes de Google
+  Autor: Olivers De Abreu
+  Compañia: Vensign
+  URL : http://www.vensign.com
+  Version: 1.0
+*/
+
+h1 {
+font-family:'Roboto Condensed', arial, serif;
+font-size:48px;
+}
+
+h2 {
+font-family:'IM Fell DW Pica', verdana, serif;
+font-size:40px;
+color:#F25835;
+}
+
+p {
+font-family:'Roboto Condensed', arial, serif;
+font-size:18px;
+}

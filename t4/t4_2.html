@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>DWEC4.2 - Lista de nombres</title>
+</head>
+<body>
+	<h1><span style="font-size: smaller;">DWEC4.2 - Lista de nombres - Juan Antonio Forte García.</span></h1>
+	<script language="JavaScript">
+	var palabra="palabra";
+	var ind =0;
+	var palabras = new Array();
+	
+	while (palabra != "") 
+	{    	
+    	palabra = prompt("Indroduzca lista de nombres: (cadena vacia para terminar):");
+		if (palabra != ""){
+			palabras[ind] = palabra;
+	    	ind++;
+		}    	    	    	
+	}    
+    //document.write("<br/>");
+	document.writeln("1er. nombre: " + palabras[0] + ".<br/>");	
+	document.writeln("Último nombre: " + palabras[palabras.length -1] + ".<br/>");	
+	document.writeln("Ordenados: " + palabras.sort() + ".<br/>");
+	//for (ind=0; ind < palabras.lenght ; ind++)
+		//document.writeln("palabras: " + palabras + ".<br/>");	
+		 
+	            
+	</script>
+</body>
+</html>

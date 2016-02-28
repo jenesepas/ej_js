@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?> 
+<!DOCTYPE sat>
+<sat>
+	<partida numero='1' socio='203' empleado='Juan' peso='2000' producto='tomate'  fecha_ent='10/12/2015'>
+		<variedad tipo='raf' peso='500'>
+		</variedad>	
+		<variedad tipo='cherry' peso='1500'>
+			<muestra fecha_esc='11/12/2015' empleado='Pepe' peso='210'>
+				<det_esc calidad='primera' calibre='50' peso='70'/>
+				<det_esc calidad='segunda' calibre='60' peso='90'/>
+				<det_esc calidad='destrio' peso='50'/>
+			</muestra>
+		</variedad>	
+	</partida>	
+	<partida numero='2' socio='23' empleado='Juan' peso='500' producto='melon' fecha_ent='12/12/2015'>
+		<variedad nombre='piel de sapo' peso='500'>
+		</variedad>		
+	</partida>	
+	<partida numero='3' socio='20' empleado='Juan' peso='100' producto='pepino' fecha_ent='13/12/2015'>
+	</partida>			
+</sat>	

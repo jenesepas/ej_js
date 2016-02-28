@@ -1,0 +1,1 @@
+window.alert('Hola soy Juan Antonio Forte Garcia desde un archivo externo')

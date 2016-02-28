@@ -1,0 +1,138 @@
+
+body
+{
+	background-color : #DDD;
+	margin : 0px 0px 0px 0px;
+	font-family : Verdana;
+	font-size : small;
+	 
+}
+
+#pagina
+{
+	/* width: 1000px; */	
+	background-color: #D8D8D8; 	
+	margin-left: auto;
+	margin-right: auto;	
+	/*padding: 0em 1em 0em 1em;*/
+	font-family: Verdana;
+	/*box-shadow: 0px 0px 40px rgba(255,255,255,0.5);*/
+}
+	
+header
+{
+	display : flex;
+	background-color : white;
+	padding : 0.5em 0.5em 0.5em 0.5em;
+}
+
+#top_espacio
+{
+	/*flex-grow : 1;*/
+	background-color: yellow;
+}
+
+.top_elemento
+{
+	margin-left : 0.5em;
+	margin-right : 0.5em;
+}
+
+nav
+{
+	display: flex;	
+	justify-content: flex-start;
+	/*margin-top: 160px;*/
+}
+
+.link_menu
+{
+	background-color: rgba(79,77,79,0.8); 
+	text-decoration: none;
+	padding: 0.5em 2em 0.5em 2em;	
+	font-weight: bold;
+	margin: 0em 0.25em 0.25em 0em;
+	font-size: small;
+	color: white; 	
+}
+
+.link_menu:hover
+{
+	background-color: rgba(79,77,79,1); 
+}
+
+#cuerpo
+{	
+	display: flex;	
+	background-color: grey;
+	width: 1200px;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+#aside
+{	
+	width: 854px;	
+	/*background-color: #600001;*/
+	/*padding: 0em 1em 1em 1em;*/
+}
+
+#video_p
+{
+	height: 480px;		
+	/*background-image: url('img_video.jpg');*/
+}
+
+
+#section
+{
+	background-color: white;
+	/*padding: 0em 1em 1em 1em;*/		
+	flex-grow: 1;
+}
+
+
+.artic
+{
+	height: 68px;
+	display: flex;	
+}
+
+.img_art
+{
+	width: 120px;		
+			
+}
+
+.tit_art
+{	
+	flex-grow: 1;
+	
+}
+
+.tit1
+{
+	font-size: small;	
+	/*margin-top: 0em;
+	margin-bottom: 0em;*/
+}
+.tit2, .tit3
+{
+	font-size: x-small;
+	/*margin-top: 0em;	
+	margin-bottom: 0em;*/
+}
+
+h1
+{
+	background-color: white;
+	margin-top : 16px;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	margin-bottom : 0px;
+	font-size : x-large;
+}
+
+
+
+
+

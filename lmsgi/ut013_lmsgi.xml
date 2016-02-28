@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?> 
+<!DOCTYPE inventario_hw>
+<inventario_hw>
+	<empresa>
+		<departamento nombre="administracion">
+			<puesto_trabajo tipo="usuario" numero="1000">
+				<elemento_hw tipo="pc">
+					<n_serie>100023456</n_serie>
+					<marca>lenovo</marca>
+					<modelo>f77</modelo>
+					<fec_compra>23/11/2010</fec_compra>
+					<n_serie>200023456</n_serie>
+					<marca>acer</marca>
+					<modelo>Extensa EX2510-35ET</modelo>
+					<fec_compra>23/01/2014</fec_compra>														
+				</elemento_hw>
+				<elemento_hw tipo="periferico">
+					<n_serie>330023456</n_serie>
+					<marca>hp</marca>
+					<modelo>laserjet1000</modelo>
+					<fec_compra>22/10/2012</fec_compra>														
+				</elemento_hw>
+				<elemento_hw tipo="red">
+					<n_serie>22334456</n_serie>
+					<marca>D-Link</marca>
+					<modelo>DGE-528T</modelo>
+					<fec_compra>22/10/2013</fec_compra>														
+				</elemento_hw>					
+			</puesto_trabajo>
+			<puesto_trabajo tipo="instalacion" numero="2000">
+				<elemento_hw tipo="pc">
+					<n_serie>100026666</n_serie>
+					<marca>hp</marca>
+					<modelo>110-360NS</modelo>																		
+				</elemento_hw>								
+			</puesto_trabajo>
+		</departamento>		
+		<departamento nombre="compras">
+			<puesto_trabajo tipo="usuario" numero="3000">
+				<elemento_hw tipo="pc">
+					<n_serie>110023456</n_serie>
+					<marca>lenovo</marca>
+					<modelo>f79</modelo>
+					<fec_compra>20/11/2009</fec_compra>																			
+				</elemento_hw>
+				<elemento_hw tipo="periferico">
+					<n_serie>440023456</n_serie>
+					<marca>hp</marca>
+					<modelo>laserjet1000</modelo>
+					<fec_compra>22/10/2012</fec_compra>														
+				</elemento_hw>				
+			</puesto_trabajo>		
+		</departamento>			
+	</empresa>
+</inventario_hw>

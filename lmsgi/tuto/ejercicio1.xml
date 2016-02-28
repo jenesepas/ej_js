@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sat>
+	<partida numero="1" socio="Juan" fecha="1/1/2015" producto="tomate" peso="8000" empleado="Mauricio">
+		<variedad nombre="raf">
+		</variedad>
+		<variedad nombre="rambo">
+		</variedad>
+	</partida>
+	<partida numero="2" socio="Jose" fecha="2/1/2015" producto="melon" peso="3000" empleado="Javier">
+		<variedad nombre="galia" peso="1000">
+		</variedad>
+		<variedad nombre="piel de sapo" peso="2000">
+			<escandallo empleado="Manuel" peso="200">
+				<detalle_escandallo calidad="primera" calibre="10" peso="30"/>
+				<detalle_escandallo calidad="primera" calibre="12" peso="40"/>
+				<detalle_escandallo calidad="segunda" calibre="10" peso="30"/>
+				<detalle_escandallo calidad="segunda" calibre="12" peso="50"/>
+				<detalle_escandallo calidad="destrio" peso="50"/>
+			</escandallo>
+		</variedad>
+	</partida>
+	<partida numero="3" socio="Marta" fecha="3/1/2015" producto="pimiento">
+	</partida>
+</sat>

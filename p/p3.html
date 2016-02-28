@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba 3 de dwec</title>
+	<script type="text/javascript">
+		function crearNueva()
+		{
+			nuevaVentana= window.open("p3b.html","new","height=300,width=300");
+		}
+		
+		function cerrarNueva()
+		{
+			nuevaVentana.close();
+			nuevaVentana=null;
+		}
+	</script>
+</head>
+<body>
+	<h3>Prueba 3 - Abrimos y cerramos ventanas</h3>	
+		<form>
+			<p><input type="button" id="crear" value="Crear nueva ventana" onclick="crearNueva()">
+			<input type="button" id="cerrar" value="Cerrar nueva ventana" onclick="cerrarNueva()">
+			</p>
+		</form>					
+</body
+</html>

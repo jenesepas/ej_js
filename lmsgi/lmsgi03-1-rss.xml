@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<rss version="2.0">
+
+  <!--Se define el canal-->
+
+  <channel>
+      <title>LMSGI03 Tarea</title>
+      <link>http://www.cifpcarlos3.es</link>
+      <description>Tarea basada en la sindicacion de contenidos</description>
+      <language>es</language>
+
+      <!--Se definen los distintos items del canal-->
+
+      <item>
+          <title>Intranet SEF</title>
+          <guid>http://www.cifpcarlos3.es/sef1314/</guid>
+          <description>Intranet utilizada por los certificados de profesionalidad.</description>
+      </item>   
+
+      <item>
+          <title>Intranet Calidad</title>
+          <guid>http://cifpcarlos3.es/calidad1516/</guid>
+          <description>Recursos relativos al plan de calidad del centro.</description>
+      </item>   
+
+      <item>
+          <title>Intranet Educación a Distancia</title>
+          <guid>https://ead.murciaeduca.es/login/index.php</guid>
+          <description>Intranet de los alumnos/as de los ciclos de Educación a Distancia.</description>
+      </item>
+  </channel>
+</rss>

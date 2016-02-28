@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>DWEC3.1 - Palabra 8</title>
+<script  type="text/javascript">
+var palabra="";
+var correcta=0;
+function  pedir_palabra()
+{
+	palabra = prompt("Indroduzca palabra (+ de 8 caracteres):");
+	if ( palabra.length > 8)
+				correcta = 1;
+}
+</script>
+
+</head>
+<body>
+	<h1><span style="font-size: smaller;">DWEC3.2 - Juan Antonio Forte García.</span></h1>
+	<script language="JavaScript">
+	 
+    while ( correcta == 0)
+    {
+			pedir_palabra();						    
+    }
+    //document.write("<br/>");
+    document.write("La palabra " + palabra + " es correcta.<br/>");
+	</script>
+</body>
+</html>

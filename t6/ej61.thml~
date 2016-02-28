@@ -1,0 +1,7 @@
+<body>
+  <form>
+    <input id="boton" type="button" value="Crear tabla"/>
+    <input id="filas" type="text" placeholder="Introduzca filas"/>
+    <input id="columnas" type="text" placeholder="Introduzca columnas"/>
+  </form>
+</body>

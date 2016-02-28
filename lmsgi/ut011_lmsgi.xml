@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?> 
+<!DOCTYPE resultados_media_maraton>
+<resultados_media_maraton>
+	<participante>
+		<n_dorsal>100</n_dorsal>
+		<nombre sexo="hombre">Pedro Perez Lopez</nombre>
+		<tiempo>
+			<horas>1</horas>
+			<minutos>12</minutos>
+			<segundos>12</segundos>
+		</tiempo>
+		<n_dorsal>200</n_dorsal>
+		<nombre sexo="hombre">Aaron Chumilla Juan</nombre>
+		<tiempo>
+			<horas>1</horas>
+			<minutos>15</minutos>
+			<segundos>40</segundos>
+		</tiempo>
+		<n_dorsal>300</n_dorsal>
+		<nombre sexo="mujer">Maria Lopez Salgado</nombre>
+		<tiempo>
+			<horas>1</horas>
+			<minutos>22</minutos>
+			<segundos>16</segundos>
+		</tiempo>
+		<n_dorsal>400</n_dorsal>
+		<nombre sexo="mujer">Silvia Dominguez Rey</nombre>
+		<tiempo>
+			<horas>1</horas>
+			<minutos>25</minutos>
+			<segundos>10</segundos>
+		</tiempo>	
+	</participante>
+</resultados_media_maraton>
+

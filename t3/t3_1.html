@@ -1,0 +1,30 @@
+<!DOCTYPE  html>
+<html>
+<head>
+<meta  http-equiv="content-type"  content="text/html;charset=utf-8">
+<title>DWEC3.1 </title>
+<script  type="text/javascript">
+function  abrirSubVentana()
+{
+	nuevaVentana =  window.open("t3_1b.html",  "sub",  "height=300,width=300");
+}
+
+function  cerrarSubVentana()
+{
+	if  (nuevaVentana)
+	{
+		nuevaVentana.close();
+	}
+}
+</script>
+</head>
+<body>
+<h1>DWEC3.1 - Juan Antonio Forte García</h1>
+<form  action="">
+<p>
+<input  type="button"  value="Abrir sub ventana"  id="abrir" onclick="abrirSubVentana()">
+<input  type="button"  value="Cerrar sub ventana"  id="cerrar" onclick="cerrarSubVentana()">
+</p>
+</form>
+</body>
+</html>

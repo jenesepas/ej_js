@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="utf-8" />
+		<title>Tarea LM1511</title>
+	</head>
+	<body>
+		<p>
+			<h1>Empresa, S.A.</h1>
+			Aquí una breve descripción de nuestra empresa.			
+		</p>		
+		<h2>Formulario de Contacto</h2>
+		
+		<form action="contacto.php" method="get">
+			
+			<table>
+				<tbody>
+					<tr>
+						<td><label for="nombre">* Nombre:</label></td>
+						<td><input type="text" id="nombre"></input></td>
+					</tr>
+					<tr>
+						<td><label for="email">* Email:</label></td>
+						<td><input type="email" id="email" placeholder="ejemplo@email.com"></input></td>
+					</tr>
+					<tr>
+						<td><label for="telefono">* Teléfono:</label></td>
+						<td><input type="tel" id="telefono"></input></td>
+					</tr>
+					<tr>
+						<td><label for="obverva">Observaciones:</label></td>
+						<td><textarea id="observa" rows="5" cols="30"></textarea></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Enviar" /></td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>* obligatorios</td>						
+					</tr>	
+				</tfoot>
+			</table>
+		</form>  
+	</body>
+</html>

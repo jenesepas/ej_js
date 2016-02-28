@@ -1,0 +1,1 @@
+window.alert("Soy Lanis desde el fichero externo p1.js.");

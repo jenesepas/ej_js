@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8" />
+		<title>LMSGI02B - Juan Antonio Forte Garcia</title>
+		<link rel="stylesheet" type="text/css" href="t2b.css" />
+	</head>
+	<body>
+		<div id="pagina">			
+			<header>
+				<div id="banner">					
+					<nav>
+						<a class="link_menu" href="siessta.es/opc1">Inicio</a>
+						<a class="link_menu" href="siessta.es/opc2">Secciones</a>
+						<a class="link_menu" href="siessta.es/opc3">Contacto</a>
+					</nav>
+				</div>
+			</header>
+			<div id="cuerpo">
+				<aside>
+					<div class="anun_lat">
+						<h4 class="titulo">Anuncio 1</h4>
+						<div class="des_anum_lat" >
+						Este es el desarrollo del anuncio 1. Voy a poner varias palabras para que ocupe varias lineas.
+						</div>
+					</div>
+					<div class="anun_lat">
+						<h4 class="titulo">Anuncio 2</h4>
+						<div class="des_anum_lat" >
+						Este es el desarrollo del anuncio 2. Voy a poner varias palabras para que ocupe varias lineas.
+						</div>
+					</div>
+					<div class="anun_lat">
+						<h4 class="titulo">Anuncio 3</h4>
+						<div class="des_anum_lat" >
+						Este es el desarrollo del anuncio 3. Voy a poner varias palabras para que ocupe varias lineas.
+						</div>
+					</div>
+				</aside>
+				<section>
+					<article>
+						<h4 class="titulo">Anuncio 1</h4>
+						<div class="anum_cen">
+							<img class="img_anun" src="camion.jpg"></img>
+							<div class="des_link_anum_cen">
+								<div class="des_anum_cen1" >
+								Este es el desarrollo del anuncio 1. Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.
+								</div>							
+								<div class="des_anum_cen2" >
+								Este es el final del anuncio 1. Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.
+								</div>
+								<div>
+									<a class="link_anum_cen" href="siessta.es/opc1">Leer más...</a>
+								</div>
+							</div>														
+						</div>								
+					</article>
+					<article>
+						<h4 class="titulo">Anuncio 2</h4>
+						<div class="anum_cen">							
+							<div class="des_link_anum_cen">
+								<div class="des_anum_cen1" >
+								Este es el desarrollo del anuncio 2. Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.
+								</div>							
+								<div class="des_anum_cen2" >
+								Este es el final del anuncio 2. Voy a poner varias palabras para que ocupe varias lineas.Voy a poner varias palabras para que ocupe varias lineas.
+								</div>
+								<div>
+									<a class="link_anum_cen" href="siessta.es/opc1">Leer más...</a>
+								</div>								
+							</div>	
+							<img class="img_anun" src="camion.jpg"></img>													
+						</div>								
+					</article>
+				</section>				
+			</div>
+			<!-- <footer>
+			PIE
+			</footer> -->
+		</div>
+	</body>	
+</html>		

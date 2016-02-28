@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?> 
+<!DOCTYPE restaurante>
+<restaurante>
+	<menu_diario tipo="mediodia">
+		<primer_plato nota="elegir uno">
+			<opcion1>Ensalada murciana</opcion1>
+			<opcion1>Macarrones a la carbonara</opcion1>
+			<opcion1>Sopa de pescado</opcion1>
+		</primer_plato>
+		<segundo_plato nota="elegir uno">
+			<opcion2>Paella de marisco</opcion2>
+			<opcion2>Bacalao al pilpil</opcion2>
+			<opcion2>Entrecot de ternera</opcion2>
+		</segundo_plato>
+		<postre nota="elegir uno">
+			<opcion>Fruta del tiempo</opcion>
+			<opcion>Tarta de chocolate</opcion>
+			<opcion>Helado</opcion>
+		</postre>
+		<precio>15</precio>
+		<n_comensales>20</n_comensales>
+	</menu_diario>
+	<menu_diario tipo="cena">
+		<primer_plato nota="elegir uno">
+			<opcion1>Ensalada de pollo</opcion1>
+			<opcion1>Entremeses</opcion1>
+			<opcion1>Gazpacho</opcion1>
+		</primer_plato>
+		<segundo_plato nota="elegir uno">
+			<opcion2>Merluza a la sal</opcion2>
+			<opcion2>Chuletas de cordero</opcion2>
+			<opcion2>Filete pollo empanado</opcion2>
+		</segundo_plato>
+		<postre nota="elegir uno">
+			<opcion>Fruta del tiempo</opcion>
+			<opcion>Tarta de chocolate</opcion>
+			<opcion>Helado</opcion>
+		</postre>
+		<precio>12</precio>
+		<n_comensales>30</n_comensales>
+	</menu_diario>
+</restaurante>

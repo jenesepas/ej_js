@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<rss version="2.0">
+
+  <!--Se define el canal-->
+
+  <channel>
+      <title>LMSGI03 Tarea</title>
+      <link>http://www.daw-distancia.es</link>
+      <description>Tarea basada en la sindicacion de contenidos</description>
+      <language>es</language>
+
+      <!--Se definen los distintos items del canal-->
+
+      <item>
+          <title>Iker Perez Lopez</title>
+          <guid>http://www.daw-distancia.es/alumno1</guid>
+          <description>Este es el canal de navedades del alumno1.</description>
+      </item>   
+
+      <item>
+          <title>Maria Bueno Navarro</title>
+          <guid>http://www.daw-distancia.es/alumno2</guid>
+          <description>Este es el canal de navedades del alumno2.</description>
+      </item>   
+
+     
+  </channel>
+</rss>

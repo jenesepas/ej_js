@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?> 
+<!DOCTYPE elecciones>
+<elecciones>
+	<partido siglas="Podemos" nombre="Podemos"></partido>
+	<partido siglas="PSOE" nombre="Partido Socialista"></partido>
+	<partido siglas="PP" nombre="Partido podular"></partido>
+	<partido siglas="Ciudadanos" nombre="Ciudadanos"></partido>
+	<partido siglas="UP" nombre="Union Popular"></partido>
+	<circunscripcion numero="1" nombre="altiplano">
+		<sede numero="1" nombre="yecla" cpostal="30510" tot_votos="2100">
+			<desglose partido="PP" votos="1000" />
+			<desglose partido="Podemos" votos="500" />
+			<desglose partido="PSOE" votos="400" />
+			<desglose partido="Ciudadanos" votos="200" />			 
+		</sede>
+		<sede numero="1" nombre="jumilla" cpostal="30520" tot_votos="1500">
+			<desglose partido="PP" votos="800" />			
+			<desglose partido="PSOE" votos="600" />
+			<desglose partido="UP" votos="80" />
+			<desglose partido="nulos" votos="20" /> 
+		</sede>
+	</circunscripcion>	
+</elecciones>
