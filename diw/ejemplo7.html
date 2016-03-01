@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- meta para asegurar la correcta visualización -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- lIbrerías de jQuery -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- librerias de jQuery Mobile-->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+
+<!-- página UNO  -->
+<div data-role="page" id="pagina1">
+
+<!-- cabecera-->
+  <div data-role="header">
+    <h1>Primera página </h1>
+  </div>
+<!-- contenido-->
+  <div data-role="main" class="ui-content">
+    <p>Contenidos de la  página UNO!!</p>
+
+   
+    <a href="#pagina2" class="ui-btn">página DOS</a>
+  </div>
+<!-- pie-->
+  <div data-role="footer">
+    <h1>Pie de página</h1>
+  </div>
+</div> 
+
+<!-- página DOS -->
+
+<div data-role="page" id="pagina2" >
+
+<!-- cabecera-->
+  <div data-role="header">
+    <h1>Segunda página</h1>
+  </div>
+<!-- contenido-->
+  <div data-role="main" class="ui-content">
+    <p>Contenidos de la página DOS!!</p>
+    <a href="#" class="ui-btn" data-rel="back">Página UNO- Atras</a>
+  </div>
+<!-- pie-->
+  <div data-role="footer">
+    <h1>Pie de página</h1>
+  </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- meta para asegurar la correcta visualización -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Hojas de estilo de jQuery Mobile -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- lIbrerías de jQuery -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- librerias de jQuery Mobile-->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>Encabezado de página</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div data-role="controlgroup" data-type="horizontal">
+	  <a href="#" class="ui-btn ui-icon-home ui-btn-icon-notext ui-alt-icon ui-nodisc-icon">Botón 1</a>
+	  <a href="#" class="ui-btn ui-icon-lock ui-btn-icon-notext">Botón 2</a>
+	  <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext">Botón 3</a>
+	  <a href="#enlace" class="ui-btn ui-icon-shop ui-btn-icon-notext">Buscar</a>
+	  <a href="#miPopup" data-rel="popup" data-transition="flow" 
+	  class="ui-btn ui-icon-comment ui-btn-icon-notext ui-btn-inline">Mostrar Popup</a>
+
+	</div>
+  </div>
+ 
+ <div data-role="popup" data-arrow="b" id="miPopup">
+	<p>Esto es popup simple.</p>
+	</div>
+		
+ <div data-role="footer" style="text-align:center;">
+	<div data-role="controlgroup" data-type="horizontal">
+	<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+	<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+	<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+	</div>
+</div>
+
+</div> 
+
+	
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- meta para asegurar la correcta visualización -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- lIbrerías de jQuery -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- librerias de jQuery Mobile-->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>Encabezado de página</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Tres formas de definir un botón</p>
+
+<input type="button" value="Botón 1">
+
+<button class="ui-btn">Botón 2</button>
+
+<a href="ejemplo3.html" class="ui-btn">Botón 3</a>
+
+  </div>
+
+  <div data-role="footer">
+    <h1>Pie de página</h1>
+  </div>
+</div> 
+
+</body>
+</html>
