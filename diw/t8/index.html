@@ -60,12 +60,21 @@
     	</div>
   	</div>
 
-  	<div data-role="main" class="ui-content">
-  		<div data-role="controlgroup" data-type="vertical">
-	    	<a href="#espuma" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Colchones Espuma</a>	  
-			<a href="#visco" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-d ui-btn-icon-right">Colchones Viscoelásticos</a>
-			<a href="#latex" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Colchones Látex</a>
-		</div>
+  	<div data-role="main" class="ui-content">  		
+  			<ul data-role="listview" data-inset="true" data-divider-theme="a">
+					<li data-role="list-divider">Catálogo de Productos</li>
+					<li><a href="#espuma">Colchones de Espuma</a></li>
+					<li><a href="#visco">Colchones Viscoelásticos</a></li>					
+					<li><a href="#latex">Colchones de Látex</a></li>
+					<li><a href="#muelles">Colchones de Muelles</a></li>
+				</ul>
+  		   <!-- 
+  		  <div data-role="controlgroup" data-type="vertical"> 
+  		   <a href="#" class="ui-btn"></a>
+	    	<a href="#espuma" class="ui-btn ui-icon-carat-d ui-alt-icon ui-nodisc-icon ui-btn-icon-right">Colchones Espuma</a>	  
+			<a href="#visco" class="ui-btn  ui-icon-carat-d ui-alt-icon ui-nodisc-icon ui-btn-icon-right">Colchones Viscoelásticos</a>
+			<a href="#latex" class="ui-btn ui-icon-carat-d ui-alt-icon ui-nodisc-icon ui-btn-icon-right">Colchones Látex</a> 
+		</div>-->
   	</div>
 		
  	<div data-role="footer" style="text-align:center;">
@@ -112,12 +121,15 @@
   	</div>
 
   	<div data-role="main" class="ui-content">
-    	<h2>Ficha del Producto:</h2>
-    	<br/>
-    	<h3>Colchón Espuma Luna 90x190.</h3>
-    	<br/>
-    	<p>El colchón de espuma Luna ofrece una magnífica relación calidad-precio, la más barata del mercado. Este colchón transmite una sensación de firmeza y adaptabilidad media-baja muy recomendable para cualquier tipo de personas. Grueso de 17 cm de espuma.</p>
-    	<h3>Precio: </h3><h2> 59,95 €</h2>
+		<div data-role="content">    	
+	    	<h2>Ficha del Producto:</h2>        		
+	    	<h3>Colchón Espuma Luna 90x190.</h3>
+	    	<img  src="diw8_img1.jpg" height=200 width=200></img>
+	    	<p>El colchón de espuma Luna ofrece una magnífica relación calidad-precio, la más barata del mercado. Este colchón transmite una sensación de firmeza y adaptabilidad media-baja muy recomendable para cualquier tipo de personas. Grueso de 17 cm de espuma.</p>
+	    	<h3>Precio: </h3><h2> 59,95 €</h2>
+	    	<br/>
+	    	<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">Atrás</a>
+    	</div>
   	</div>
 		
  	<div data-role="footer" style="text-align:center;">
@@ -128,8 +140,41 @@
 		</div>
 	</div>
 
-</div> <!-- fin pag. catalogo -->
+</div> <!-- fin pag. ficha producto -->
 
+
+!-- Pag. Quienes Somos  -->
+<div data-role="page" id="somos">
+  	<div data-role="header" style="text-align:center;">
+  		<div data-role="controlgroup" data-type="horizontal">	
+  			<a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left">Inicio</a>
+    		<button class="ui-btn">Siessta  Home</button>
+    		<a href="#enlace" class="ui-btn ui-icon-search ui-btn-icon-left">Buscar</a>
+    	</div>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+		<div data-role="content">    	
+	    	<h2>Quienes Somos:</h2>        		
+	    	<h3>Siessta Home</h3>
+	    	<img  src="diw8_img2.jpg" height=200 width=200></img>
+	    	<p>Tienda online especializada en la venta de colchones, fundas, almohadas, somieres, camas articuladas y todo tipo de productos relacionados con su descanso y relax.</p>
+	    	<h3>Tlfno: +34 644 263 059 </h3>
+	    	<h3>Email: info@siessta.es</h3>
+	    	<br/>
+	    	<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext" data-rel="back">Atrás</a>
+    	</div>
+  	</div>
+		
+ 	<div data-role="footer" style="text-align:center;">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+		</div>
+	</div>
+
+</div> <!-- fin pag. ficha producto -->
 	
 </body>
 </html>
