@@ -5,21 +5,29 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<!-- meta para asegurar la correcta visualización -->
+<!-- meta para asegurar la correcta visualización 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Hojas de estilo de jQuery Mobile -->
+<!-- Hojas de estilo de jQuery Mobile
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<!--
+
 <link rel="stylesheet" href="themes/mytheme.min.css">
-<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
--->
-<!-- lIbrerías de jQuery -->
+<!-- <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> -->
+
+<!-- lIbrerías de jQuery
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-<!-- librerias de jQuery Mobile-->
+<!-- librerias de jQuery Mobile
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+-->
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="themes/mytheme.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+  
 </head>
 <body>
 
