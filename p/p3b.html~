@@ -15,7 +15,7 @@
 		document.write("Today is "+semana[dia.getDate()]+", dia "+dia.getDate()+" del mes "+meses[dia.getMonth()]+" de "+dia.getFullYear()+".");
 
 		document.write("<br/>");
-		document.write("slice: "+meses.slice(5,-1));
+		document.write("slice: "+meses.slice(5,0));
 		
 	</script>	
 </body

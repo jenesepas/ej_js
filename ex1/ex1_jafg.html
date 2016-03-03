@@ -1,0 +1,36 @@
+<!DOCTYPE html" >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Examen DWEC ejercicio 1- Juan Antonio Forte García</title>		
+	</head>
+	<body>
+		<h3>Ejercicio 1</h3>
+		<script type="text/javascript">
+			
+			var n1=parseInt(prompt("Introduzca n1:"));
+			var n2=n1;
+			var n3=n1;
+			
+			while (n1 == n2)
+			{
+				n2=parseInt(prompt("Introduzca n2:"));
+				if (n1 == n2){
+					alert("Numero repetido");					
+				}
+				
+			}
+			
+			while (n3 == n1 || n3 == n2)
+			{
+				n3=parseInt(prompt("Introduzca n3:"));
+				if (n3 == n1 || n3 == n2){
+					alert("Numero repetido");					
+				}
+				
+			}			
+			var dif=(Math.max(n1,n2,n3)) - (Math.min(n1,n2,n3));
+			document.write("La diferencia entre "+Math.max(n1,n2,n3)+" y "+Math.min(n1,n2,n3)+" es: "+dif+".");
+		</script>
+	</body>
+</html>

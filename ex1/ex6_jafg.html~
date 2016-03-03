@@ -1,0 +1,53 @@
+<!DOCTYPE html" >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Examen DWEC ejercicio 6- Juan Antonio Forte García</title>
+		<script type="text/javascript">
+			function Cursos(p_nom)
+			{
+				this.nombre=p_nom;
+				this.alumnos = [];
+				this.max_alum=0;		
+						
+				this.alta_alum = function (p_alum)				
+				{					
+					if (this.alumnos.length < 5) {					
+						this.alumnos[this.max_alum] = p_alum;
+						this.max_alum++;
+					}
+					else 	
+						document.write("Ya estan todas las plazas asignadas.");
+				}
+				
+				this.pinta_alum= function ()
+				{
+					document.write("Curso :"+curso.nombre+" con "+curso.max_alum+ " alumnos siguientes:");	
+					document.write("<br/>");				
+					for (var i=0; i < this.alumnos.length;i++)
+					{					
+						document.write(curso.nombre+" - "+curso.alumnos[i]+" - "+curso.max_alum+".<br/>");
+					}						
+				}
+				
+			}
+		</script>	
+	</head>
+	<body>
+		<h3>Ejercicio 6</h3>
+		<script type="text/javascript">
+			
+				var curso = new Cursos("DAW");
+				curso.alta_alum("Alumno1");
+				curso.alta_alum("Alumno2");
+				curso.alta_alum("Alumno3");
+				curso.alta_alum("Alumno4");
+				curso.alta_alum("Alumno5");
+				curso.alta_alum("Alumno6");
+				
+				curso.pinta_alum();
+			
+			
+		</script>
+	</body>
+</html>

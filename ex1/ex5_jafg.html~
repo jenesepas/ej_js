@@ -1,0 +1,65 @@
+<!DOCTYPE html" >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Examen DWEC ejercicio 5- Juan Antonio Forte García</title>
+		<script type="text/javascript">
+			function cod_dni(p_dni)
+			{
+				var dni_ok="";
+				if (p_dni=="")
+				   dni_ok=false;
+				else {   
+					dni_ok=true; 	
+							
+					var dni_num=0;
+					//alert(p_dni);
+					
+					var letra=["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"]
+					dni_num=parseInt(p_dni.substring(0,p_dni.length -1));
+					var dni_letra=p_dni[p_dni.length-1];
+					dni_letra = dni_letra.toUpperCase();
+					
+					//alert(letra[dni_num%23]+"="+dni_letra);
+					
+					if (letra[dni_num % 23] == dni_letra)
+						dni_ok=true;
+					else 
+						dni_ok=false;
+				}	
+					
+			//alert(dni_ok);
+			return dni_ok;
+		}
+		</script>	
+	</head>
+	<body>
+		<h3>Ejercicio 5</h3>
+		<script type="text/javascript">
+			
+			//var dni=prompt("Introduzca el dni:");
+			//var es_pr = primo(n1);
+			var salir=0;
+			while (salir == 0)
+			{
+				var dni=prompt("Introduzca el dni:");
+				//var es_pr = primo(n1);
+				
+				if (cod_dni(dni)){
+					document.write("El dni "+dni+" es correcto. <br/>");
+					salir=1;
+				}	
+				else				
+					alert("El dni "+dni+" es incorrecto. <br/>");
+			}
+			
+			
+			
+			
+			
+			
+				
+			
+		</script>
+	</body>
+</html>

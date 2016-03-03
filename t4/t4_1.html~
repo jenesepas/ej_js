@@ -1,0 +1,15 @@
+<!DOCTYPE  html>
+<html>
+<head>
+<meta  http-equiv="content-type"  content="text/html;charset=utf-8">
+<title>DWEC4.1</title>
+</head>
+<body>
+<h1>DWEC4.1 - Dia de la semana - Juan Antonio Forte García</h1>
+<script type="text/javascript" >
+	var d = new Date();
+	var diasSemana = new Array("Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"); 
+	document.write("Hoy es  " + diasSemana[d.getDate()] +".<br/>);
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html" >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Examen DWEC ejercicio 2- Juan Antonio Forte García</title>	
+		
+		<script type="text/javascript">	
+			
+			function pideCadena()
+			{
+				var p_cad="1";
+				while (p_cad.length < 10 || cadenaOk(p_cad) == 1)
+				{
+					p_cad=prompt("Introduzca cadena:");
+					if (p_cad.length < 10 || cadenaOk(p_cad) == 1)
+						alert("Cadena menor de 10 ó con números.");									
+				}
+				
+				//alert("fuera: "+p_cad+", "+p_cad.length+" y "+cadenaOk(p_cad));
+				
+				return p_cad;
+						
+			}
+			
+			
+			function cadenaOk(p_cad)
+			{
+				var con_numeros=1;
+				var i=0;
+				var a=0;
+							
+				var numeros=["0","1","2","3","4","5","6","7","8","9"];
+				//alert(numeros);
+				 
+				 for (i=0;i < p_cad.length; i++)
+				 {
+					//alert(p_cad.charAt(i));
+					
+					for (a=0;a < numeros.length; a++)
+					{						
+						//alert(p_cad.charAt(i)+ " == " + numeros[a])
+						if (p_cad.charAt(i) == numeros[a]){
+							//alert("Cadena con numeros.");								
+							con_numeros = 1;				
+							break;	
+						}	
+						else con_numeros = 0;
+					}
+											
+				 }
+			
+				return con_numeros;
+				 
+				
+			
+			}
+			
+		</script>	
+	
+	</head>
+	<body>
+		<h3>Ejercicio 2</h3>
+		<script type="text/javascript">			
+			var cad="";
+			//var hay_numeros=1;
+			
+			
+			cad = pideCadena();
+/*			
+			while(cadenaOk(p_cad) == 1)
+			{
+				p_cad = pideCadena();
+			} */
+			
+			
+			
+			document.write("La cadena \""+cad+"\" no tiene numeros.");			
+				
+			
+			//alert(cad);
+		</script>
+	</body>
+</html>

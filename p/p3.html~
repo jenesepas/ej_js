@@ -2,8 +2,7 @@
 <html>
 <head>
 	<title>Prueba 3 de dwec</title>
-	<script type="text/javascript">		
-		
+	<script type="text/javascript">
 		function crearNueva()
 		{
 			nuevaVentana= window.open("p3b.html","new","height=300,width=300");

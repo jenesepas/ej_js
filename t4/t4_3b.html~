@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>DWEC4.3 - Calcular</title>
+<script  type="text/javascript">
+
+var rtdo=0;
+function  calcular(n1,n2,opera)
+{
+	var valor=0;	
+	switch (opera)
+	{	
+		case "SUM":
+				valor= n1 + n2
+				break
+		case "MULT":
+				valor= n1 * n2
+				break
+		case "POT":
+				valor= Math.pow(n1,n2)
+				break
+	}
+	return valor;
+}
+</script>
+
+</head>
+<body>
+	<h1><span style="font-size: smaller;">DWEC4.3 - Calcular - Juan Antonio Forte García.</span></h1>
+	<script language="JavaScript">
+	 //document.write("<br/>");
+	 var num1 = parseInt(prompt("Indroduzca el número 1:"));
+	 var num2 = parseInt(prompt("Indroduzca el número 2:")); 
+	 
+	 rtdo = calcular(num1,num2,"SUM");
+    document.write("LA SUMA de "+num1+" y "+num2+" es: " + rtdo + ".<br/>");
+    
+    rtdo = calcular(num1,num2"MULT");
+    document.write("LA MULTIPLICACION de "+num1+" y "+num2+" es: " + rtdo + ".<br/>");
+    
+    rtdo = calcular(num1,num2"POT");
+    document.write("LA POTENCIA de "+num1+" elevado a "+num2+" es: " + rtdo + ".<br/>");
+	</script>
+</body>
+</html>

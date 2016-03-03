@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>EJERCICIO OBJETOS</title>
+</head>
+
+<body>
+    <SCRIPT>
+
+//funcion para crear el objeto
+    
+    function curso(nombre){
+
+        this.nombre = nombre;
+        this.alumnos = [];
+        
+        this.agregaralumnos = function(alumno) {
+            if (this.alumnos.length < 10) {
+                this.alumnos.push(alumno)
+            } else alert('numero de alumnos superado')
+        };
+
+        this.listarcurso = function (){
+            document.write('<h1>ALUMNOS DEL CURSO ' + this.nombre+'</h1><br/>');
+            for (var i in this.alumnos){
+                document.write(this.alumnos[i]+'<br/>')
+            }
+        };
+    }
+
+    //Creamos unos cuantos alumnos para probar
+    var curso1 = new curso('2DAW')
+    
+    curso1.agregaralumnos('Alumno 1')
+    curso1.agregaralumnos('Alumno 2')
+    curso1.agregaralumnos('Alumno 3')
+    curso1.agregaralumnos('Alumno 4')
+    curso1.agregaralumnos('Alumno 5')
+    curso1.agregaralumnos('Alumno 6')
+    curso1.agregaralumnos('Alumno 7')
+        
+    curso1.listarcurso();
+
+</SCRIPT>
+
+</body>
+</html>

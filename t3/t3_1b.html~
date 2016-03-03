@@ -8,7 +8,7 @@
 <h1>DWEC3.1 - Sub-Ventana</h1>
 <script type="text/javascript" >
 	var d = new Date();
-	document.write("Hoy es el dia " + d.getDate() +" del mes "+ (d.getMonth() + 1) + " del año " + d.getFullYear() +".<br/>");
+	document.write("Hoy es el dia " + d.getDate() +" del mes "+ d.getMonth() + " del año " + d.getFullYear() +".<br/>");
 </script>
 </body>
 </html>

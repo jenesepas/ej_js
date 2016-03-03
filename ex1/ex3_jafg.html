@@ -1,0 +1,66 @@
+<!DOCTYPE html" >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Examen DWEC ejercicio 3- Juan Antonio Forte García</title>
+		<script type="text/javascript">
+			function primo(n_num)
+			{
+			var primo=true; //para el 1 y el mismo es true				
+			//alert(n_num+"-"+primo);
+			if (n_num = "")
+				primo="no hay numero."
+			else
+			{
+				if (n_num > 1)
+				{						
+					for (var i=2; i < n_num -1; i++)
+					{
+						if (n_num % i == 0){
+							primo=false;
+							break;
+						}												
+					}
+				}
+				//alert(primo);
+			}	
+			return primo;
+			}
+		</script>	
+	</head>
+	<body>
+		<h3>Ejercicio 3</h3>
+		<script type="text/javascript">
+			/*
+			var n1=parseInt(prompt("Introduzca un numero:"));
+			var es_primo = primo(n1);
+			
+			if (es_primo)
+				document.write(n1+" es primo. <br/>");
+			else	
+				document.write(n1+" es no primo <br/>");
+			*/
+			
+			var ind=1;
+			document.write("Numeros primos del 1 al 10000: <br/>");
+			var d1 = new Date();						
+			
+			while (ind <= 10000)
+			{
+				if (primo(ind)){					
+					document.write(ind+",");
+					if (ind % 50 == 0)
+						document.write("<br/>")
+				}	
+				ind++;
+			}
+			document.write("<br/><br/>");
+			var d2 = new Date();
+			document.write("Milisegundos: "+(d2-d1));
+			
+			
+				
+			
+		</script>
+	</body>
+</html>

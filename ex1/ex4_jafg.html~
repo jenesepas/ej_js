@@ -1,0 +1,18 @@
+<!DOCTYPE html" >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Examen DWEC ejercicio 4- Juan Antonio Forte García</title>		
+	</head>
+	<body>
+		<h3>Ejercicio 4</h3>
+		<script type="text/javascript">
+			
+			if (navigator.cookieEnabled)
+		
+		</script>
+		<noscript>
+				echo("Cookies no habilitadas en este navegador");		
+		</noscript>
+	</body>
+</html>
