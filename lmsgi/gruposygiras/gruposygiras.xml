@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<giras>
+	<grupos>
+		<grupo id="COB" nombre="Children of Bodom" />
+		<grupo id="SCO" nombre="Scorpions" />
+		<grupo id="MTL" nombre="Metallica" />
+	</grupos>
+	<giras>
+		<gira id="G01" grupo="SCO" nombre="Scorpions Tour Nament" >
+			<actuacion localidad="Madrid" emplazamiento="Palacio de los deportes" fecha="2012-10-25T23:00:00" />
+			<actuacion localidad="Barcelona" emplazamiento="Camp Nou" fecha="2012-11-01T23:00:00" observaciones="Tomar salida 432 de la autovía"/>
+			<actuacion localidad="Sevilla" emplazamiento="Plaza de toros" fecha="2012-11-04T23:00:00" observaciones="Entrada prohibida a menores de 18 años"/>
+			<actuacion localidad="Bilbao" emplazamiento="Palacio de congresos" fecha="2012-11-06T23:00:00" />
+		</gira>
+		<gira id="G02" grupo="MTL" nombre="Metatour">
+			<actuacion localidad="Santander" emplazamiento="Palacio de los deportes" fecha="2012-09-23T22:00:00" />
+			<actuacion localidad="Valencia" emplazamiento="Plaza de toros" fecha="2012-10-06T21:30:00" observaciones="Entrada prohibida a menores de 18 años"/>
+			<actuacion localidad="Barcelona" emplazamiento="Camp Nou" fecha="2012-10-07T22:30:00" />
+			<actuacion localidad="Tarragona" emplazamiento="Palacio de congresos" fecha="2012-11-01T21:00:00"/>
+		</gira>
+	</giras>
+</giras>
