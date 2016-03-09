@@ -1,34 +1,37 @@
-<!ELEMENT factura (llamadas, mensajes, datos, resumen)>
-<!ELEMENT llamadas ANY>
-<!ELEMENT llamada ANY>
+<!ELEMENT factura (llamadas?, mensajes?, datos?, resumen)>
+
+<!ELEMENT llamadas (llamada+)>
+<!ELEMENT llamada (fechahora, tarificacion, destino)>
 <!ATTLIST llamada id ID #IMPLIED> 
 <!ATTLIST llamada tipo CDATA #IMPLIED> 
 <!ELEMENT fechahora ANY>
-<!ATTLIST fechahora inicio CDATA #IMPLIED> 
+<!ATTLIST fechahora inicio CDATA #REQUIRED> 
 <!ATTLIST fechahora fin CDATA #IMPLIED> 
 <!ELEMENT tarificacion ANY>
 <!ATTLIST tarificacion duracion CDATA #IMPLIED> 
 <!ATTLIST tarificacion importe CDATA #IMPLIED> 
 <!ELEMENT destino ANY>
 <!ATTLIST destino numero CDATA #IMPLIED> 
-<!ELEMENT mensajes ANY>
-<!ELEMENT mensaje ANY>
+
+<!ELEMENT mensajes (mensaje)>
+<!ELEMENT mensaje (fechahora, tarificacion, destino, contenido)>
 <!ATTLIST mensaje id ID #IMPLIED> 
 <!ATTLIST mensaje tipo CDATA #IMPLIED>
 <!ELEMENT fechahora ANY>
-<!ATTLIST fechahora inicio CDATA #IMPLIED> 
+<!ATTLIST fechahora inicio CDATA #REQUIRED> 
 <!ELEMENT tarificacion ANY>
 <!ATTLIST tarificacion duracion CDATA #IMPLIED> 
 <!ATTLIST tarificacion importe CDATA #IMPLIED>
 <!ELEMENT destino ANY>
 <!ATTLIST destino numero CDATA #IMPLIED> 
-<!ELEMENT contenido ANY>
-<!ELEMENT datos ANY>
-<!ELEMENT sesion ANY>
+<!ELEMENT contenido (#PCDATA)>
+
+<!ELEMENT datos (sesion)>
+<!ELEMENT sesion (fechahora, tarificacion, trafico)>
 <!ATTLIST sesion id ID #IMPLIED> 
 <!ATTLIST sesion tipo CDATA #IMPLIED>
 <!ELEMENT fechahora ANY>
-<!ATTLIST fechahora inicio CDATA #IMPLIED> 
+<!ATTLIST fechahora inicio CDATA #REQUIRED> 
 <!ATTLIST fechahora fin CDATA #IMPLIED> 
 <!ELEMENT tarificacion ANY>
 <!ATTLIST tarificacion duracion CDATA #IMPLIED> 
@@ -36,13 +39,14 @@
 <!ELEMENT trafico ANY>
 <!ATTLIST trafico kbsubidos CDATA #IMPLIED> 
 <!ATTLIST trafico kbbajados CDATA #IMPLIED> 
-<!ELEMENT resumen ANY>
+
+<!ELEMENT resumen (subtotal*,total)>
 <!ELEMENT subtotal ANY>
 <!ATTLIST subtotal tipo CDATA #IMPLIED> 
 <!ATTLIST subtotal cantidad CDATA #IMPLIED> 
 <!ATTLIST subtotal importe CDATA #IMPLIED> 
 <!ELEMENT total ANY>
-<!ATTLIST total base CDATA #IMPLIED> 
-<!ATTLIST total iva CDATA #IMPLIED> 
-<!ATTLIST total cuota CDATA #IMPLIED> 
-<!ATTLIST total total CDATA #IMPLIED> 
+<!ATTLIST total base CDATA #REQUIRED> 
+<!ATTLIST total iva CDATA #REQUIRED> 
+<!ATTLIST total cuota CDATA #REQUIRED> 
+<!ATTLIST total total CDATA #REQUIRED> 
