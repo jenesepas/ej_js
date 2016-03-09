@@ -4,41 +4,47 @@
 <!ELEMENT llamada (fechahora, tarificacion, destino)>
 <!ATTLIST llamada id ID #REQUIRED> 
 <!ATTLIST llamada tipo (N|E|I) #REQUIRED> 
+<!ELEMENT fechahora ANY>
+<!ATTLIST fechahora inicio CDATA #REQUIRED> 
+<!ATTLIST fechahora fin CDATA #IMPLIED> 
+<!ELEMENT tarificacion ANY>
+<!ATTLIST tarificacion duracion CDATA #IMPLIED> 
+<!ATTLIST tarificacion importe CDATA #IMPLIED> 
+<!ELEMENT destino ANY>
+<!ATTLIST destino numero CDATA #IMPLIED> 
 
 <!ELEMENT mensajes (mensaje*)>
 <!ELEMENT mensaje (fechahora, tarificacion, destino, contenido)>
 <!ATTLIST mensaje id ID #REQUIRED> 
 <!ATTLIST mensaje tipo (N|E|I) #REQUIRED>
+<!ELEMENT fechahora EMPTY>
+<!ATTLIST fechahora inicio CDATA #REQUIRED> 
+<!ELEMENT tarificacion EMPTY>
+<!ATTLIST tarificacion duracion CDATA #IMPLIED> 
+<!ATTLIST tarificacion importe CDATA #IMPLIED>
+<!ELEMENT destino EMPTY>
+<!ATTLIST destino numero CDATA #IMPLIED> 
+<!ELEMENT contenido (#PCDATA)>
 
 <!ELEMENT datos (sesion*)>
 <!ELEMENT sesion (fechahora, tarificacion, trafico)>
 <!ATTLIST sesion id ID #REQUIRED> 
 <!ATTLIST sesion tipo (N|E|I) #REQUIRED>
-
-<!ELEMENT resumen (subtotal*,total)>
-
-<!ELEMENT fechahora ANY>
+<!ELEMENT fechahora EMPTY>
 <!ATTLIST fechahora inicio CDATA #REQUIRED> 
 <!ATTLIST fechahora fin CDATA #IMPLIED> 
-
-<!ELEMENT tarificacion ANY>
+<!ELEMENT tarificacion EMPTY>
 <!ATTLIST tarificacion duracion CDATA #IMPLIED> 
-<!ATTLIST tarificacion importe CDATA #IMPLIED> 
-
-<!ELEMENT destino ANY>
-<!ATTLIST destino numero CDATA #IMPLIED> 
-
-<!ELEMENT contenido (#PCDATA)>
-
+<!ATTLIST tarificacion importe CDATA #IMPLIED>
 <!ELEMENT trafico EMPTY>
 <!ATTLIST trafico kbsubidos CDATA #IMPLIED> 
-<!ATTLIST trafico kbbajados CDATA #IMPLIED>
+<!ATTLIST trafico kbbajados CDATA #IMPLIED> 
 
+<!ELEMENT resumen (subtotal*,total)>
 <!ELEMENT subtotal EMPTY>
 <!ATTLIST subtotal tipo CDATA #IMPLIED> 
 <!ATTLIST subtotal cantidad CDATA #IMPLIED> 
 <!ATTLIST subtotal importe CDATA #IMPLIED> 
-
 <!ELEMENT total EMPTY>
 <!ATTLIST total base CDATA #REQUIRED> 
 <!ATTLIST total iva CDATA #REQUIRED> 

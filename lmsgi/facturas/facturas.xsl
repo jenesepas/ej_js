@@ -7,12 +7,21 @@
 				</h3>
 				<ul>Referencia CUPS: <xsl:value-of select="/*/Cabecera/Codigo" /></ul>
 				<ul>Número de serie del contador: <xsl:value-of select="/*/Facturas/FacturaATR/Medidas/Aparato/NumeroSerie" /></ul>
-				<br/>
-				<h4>Periodo  Watios</h4>
-				<xsl:for-each select="/*/Facturas/FacturaATR/Potencia/TerminoPotencia/Periodo">
-					<xsl:value-of select="@nombre" />...<xsl:value-of select="PotenciaContratada" />
-					<br/>		
-				</xsl:for-each>													
+				<br/>				
+				<table border="1">
+					<tr bgcolor="#9acd32">
+						<th>Periodo</th>
+						<th>Watios</th>						
+					</tr>
+					<xsl:for-each select="/*/Facturas/FacturaATR/Potencia/TerminoPotencia/Periodo">
+					<tr>					
+					<td><xsl:value-of select="@nombre" /></td>
+					<td><xsl:value-of select="PotenciaContratada" /></td>					
+					</tr>
+					</xsl:for-each>						
+					<br/>	
+				</table>			
+																
 			</body>
 		</html>
 	</xsl:template>

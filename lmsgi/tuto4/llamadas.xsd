@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="factura">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="llamadas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="llamada" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="fechahora">
+											<xs:complexType>											
+												<xs:attribute name="inicio" type="xs:dateTime" use="required"></xs:attribute>
+												<xs:attribute name="fin" type="xs:dateTime"></xs:attribute>											
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="tarificacion">
+											<xs:complexType>
+												<xs:attribute name="duracion" type="xs:time"></xs:attribute>
+												<xs:attribute name="importe">
+													<xs:simpleType>
+														<xs:restriction base="xs:decimal">
+															<xs:totalDigits value="10" />
+															<xs:fractionDigits value="6" />
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="destino">
+											<xs:complexType>
+												<xs:attribute name="numero"></xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:ID"></xs:attribute>
+									<xs:attribute name="tipo">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="N"/>
+												<xs:enumeration value="E"/>
+												<xs:enumeration value="I"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="mensajes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mensaje" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="fechahora">
+											<xs:complexType>
+												<xs:attribute name="inicio" type="xs:dateTime" use="required"></xs:attribute>
+												<xs:attribute name="fin" type="xs:dateTime"></xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="tarificacion">
+											<xs:complexType>
+												<xs:attribute name="duracion" type="xs:time"></xs:attribute>
+												<xs:attribute name="importe">
+													<xs:simpleType>
+														<xs:restriction base="xs:decimal">
+															<xs:totalDigits value="10" />
+															<xs:fractionDigits value="6" />
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="destino">
+											<xs:complexType>
+												<xs:attribute name="numero"></xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="contenido">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="240"></xs:maxLength>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>									
+									<xs:attribute name="id" type="xs:ID"></xs:attribute>
+									<xs:attribute name="tipo">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="N"/>
+												<xs:enumeration value="E"/>
+												<xs:enumeration value="I"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="datos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="sesion" minOccurs="0" maxOccurs="unbounded"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="resumen">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="subtotal" minOccurs="0" maxOccurs="3">
+								<xs:complexType>
+									<xs:attribute name="tipo">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="llamadas" />
+												<xs:enumeration value="mensajes" />
+												<xs:enumeration value="datos" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="cantidad" type ="xs:integer" />
+									<xs:attribute name="importe">
+										<xs:simpleType>
+											<xs:restriction base="xs:decimal">
+												<xs:totalDigits value="10" />
+												<xs:fractionDigits value="2" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="total">
+								<xs:complexType>
+									<xs:attribute name="tipo"></xs:attribute>
+									<xs:attribute name="base">
+										<xs:simpleType>
+											<xs:restriction base="xs:decimal">
+												<xs:totalDigits value="10" />
+												<xs:fractionDigits value="2" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="iva">
+										<xs:simpleType>
+											<xs:restriction base="xs:decimal">
+												<xs:totalDigits value="4" />
+												<xs:fractionDigits value="2" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="cuota">
+										<xs:simpleType>
+											<xs:restriction base="xs:decimal">
+												<xs:totalDigits value="10" />
+												<xs:fractionDigits value="2" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="total">
+										<xs:simpleType>
+											<xs:restriction base="xs:decimal">
+												<xs:totalDigits value="10" />
+												<xs:fractionDigits value="2" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

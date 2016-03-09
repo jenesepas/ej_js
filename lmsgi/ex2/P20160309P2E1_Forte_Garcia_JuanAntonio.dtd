@@ -1,0 +1,25 @@
+<!ELEMENT cv (datospersonales, formacion?, experiencia?)>
+<!ATTLIST cv actualizadoa CDATA #REQUIRED> 
+
+<!ELEMENT datospersonales (#PCDATA)>
+<!ATTLIST datospersonales nombre CDATA #REQUIRED> 
+<!ATTLIST datospersonales apellidos CDATA #REQUIRED> 
+
+<!ELEMENT formacion (titulacion*,curso*)>
+<!ELEMENT titulacion ANY>
+<!ATTLIST titulacion anyo CDATA #REQUIRED> 
+<!ATTLIST titulacion nivel (1|2|3|4|5|6) #REQUIRED> 
+<!ATTLIST titulacion titulo CDATA #REQUIRED> 
+<!ATTLIST titulacion menciones CDATA #IMPLIED>
+
+<!ELEMENT curso ANY>
+<!ATTLIST curso anyo CDATA #REQUIRED> 
+<!ATTLIST curso horas CDATA #REQUIRED> 
+<!ATTLIST curso titulo CDATA #REQUIRED> 
+
+<!ELEMENT experiencia (trabajo+)>
+<!ELEMENT trabajo (#PCDATA)>
+<!ATTLIST trabajo desde CDATA #REQUIRED> 
+<!ATTLIST trabajo hasta CDATA #IMPLIED> 
+<!ATTLIST trabajo contrato CDATA #REQUIRED> 
+<!ATTLIST trabajo empresa CDATA #REQUIRED>

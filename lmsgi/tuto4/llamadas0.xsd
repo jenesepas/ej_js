@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">	
+
+<xs:element name="factura">
+	<xs:complexType>
+	<xs:sequence>
+		<xs:element name="llamadas">		
+		<xs:complexType>
+		<xs:sequence>
+			<xs:element name="llamada" minOccurs="0" maxOccurs="unbounded">	
+				<xs:complexType>
+				<xs:sequence>					
+					<xs:element name="fechahora">
+					<xs:complexType>
+						<xs:attribute name="inicio" type="xs:dateTime" use="required"></xs:attribute>
+						<xs:attribute name="fin" type="xs:dateTime"></xs:attribute>
+					</xs:complexType>
+					</xs:element>
+					<xs:element name="tarificacion">
+					<xs:complexType>
+						<xs:attribute name="duracion" type="xs:time"></xs:attribute>
+						<xs:attribute name="importe">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:totalDigits value="10" />
+								<xs:fractionDigits value="6" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					</xs:complexType>
+					</xs:element>
+					<xs:element name="destino">
+					<xs:complexType>
+						<xs:attribute name="numero"></xs:attribute>
+					</xs:complexType>
+					</xs:element>										
+				</xs:sequence>	
+				<xs:attribute name="id" type="xs:ID"></xs:attribute>
+				<xs:attribute name="tipo">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="N"/>
+							<xs:enumeration value="E"/>
+							<xs:enumeration value="I"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		</xs:complexType>
+		</xs:element>
+		
+		<xs:element name="mensajes">
+		<xs:complexType>
+		<xs:sequence>
+			<xs:element name="mensaje">	
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="fechahora"/>	
+					<xs:element name="tarificacion"/>
+					<xs:element name="destino"/>
+					<xs:element name="contenido" type="xs:string"/>
+				</xs:sequence>	
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>		
+		</xs:complexType>
+		</xs:element>
+		
+		<xs:element name="datos">
+		<xs:complexType>
+		<xs:sequence>
+			<xs:element name="sesion">	
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="fechahora"/>	
+					<xs:element name="tarificacion"/>
+					<xs:element name="trafico"/>					
+				</xs:sequence>	
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		</xs:complexType>
+		</xs:element>
+		
+		<xs:element name="resumen">	
+		<xs:complexType>
+		<xs:sequence>		
+			<xs:element name="subtotal" maxOccurs="unbounded"/>	
+			<xs:element name="total"/>													
+		</xs:sequence>
+		</xs:complexType>
+		</xs:element>
+		
+	</xs:sequence>
+	</xs:complexType>
+</xs:element>	
+</xs:schema>

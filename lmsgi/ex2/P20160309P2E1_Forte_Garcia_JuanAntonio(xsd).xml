@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cv actualizadoa="2016-01-01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+							  xsi:schemaLocation="P20160309P2E1_Forte_Garcia_JuanAntonio.xsd">
+	<datospersonales nombre="Genaro" apellidos="Gallardo Garrido" >
+		Me describo como la persona idónea para este puesto de trabajo.
+	</datospersonales>
+	<formacion>
+		<titulacion anyo="2008" nivel="5" titulo="Licenciado en Bellas Artes" menciones="MH"/>
+		<titulacion anyo="2015" nivel="3" titulo="Tecnico Superior en Desarrollo de Aplicaciones Web" />
+		<curso anyo="2009" horas="100" titulo="El cromatismo sonoro en la textura musical" />
+		<curso anyo="2011" horas="2" titulo="Tratar con adolescentes, el curso definitivo" />
+		<curso anyo="2013" horas="80" titulo="La tangencialidad subliminal de las reverberaciones yuxtapuestas" />
+	</formacion>
+	<experiencia>
+		<trabajo desde="2015-04-01" hasta="2015-06-30" contrato="Becario" empresa="Digimini, Ltd.">
+			Periodo de formación en centro de trabajo.
+		</trabajo>
+		<trabajo desde="2015-07-01" contrato="Prácticas" empresa="Digimini, Ltd.">
+			Contrato en prácticas vigente en la actualidad.
+		</trabajo>
+	</experiencia>	
+</cv>

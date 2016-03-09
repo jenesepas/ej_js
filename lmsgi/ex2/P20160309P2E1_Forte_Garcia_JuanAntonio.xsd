@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="cv">
+		<xs:complexType>		
+			<xs:sequence>
+				<xs:element name="datospersonales" />
+				<xs:element name="formacion" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="titulacion" minOccurs="0" maxOccurs="unbounded" mixed="true">
+							<xs:complexType>							
+								<xs:attribute name="anyo">
+									<xs:simpleType>
+										<xs:restriction base="xs:integer">
+											<xs:minInclusive value="1950"/>
+											<xs:maxInclusive value="2016"/>
+										</xs:restriction>
+									</xs:simpleType>
+									<xs:attribute name="nivel" type="xs:integer"/>
+									<xs:attribute name="titulo" type="xs:string"/>
+									<xs:attribute name="menciones" type="xs:string" use="optional"/>
+								</xs:attribute>							
+							</xs:complexType>
+							</xs:element>
+							<xs:element name="curso" minOccurs="0" maxOccurs="unbounded" mixed="true">
+								<xs:complexType>							
+								<xs:attribute name="anyo">
+									<xs:simpleType>
+										<xs:restriction base="xs:integer">
+											<xs:minInclusive value="1950"/>
+											<xs:maxInclusive value="2016"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+								<xs:attribute name="horas" type="xs:integer"/>
+								<xs:attribute name="titulo" type="xs:string"/>	
+							</xs:complexType>
+							</xs:element>
+						</xs:all>	
+					</xs:complexType>
+				</xs:element>	
+				<xs:element name="experiencia" />
+			</xs:sequence>	
+			<xs:attribute name="actualizadoa" type="xs:date" />
+		</xs:complexType>
+		
+	</xs:element>
+</xs:schema>
